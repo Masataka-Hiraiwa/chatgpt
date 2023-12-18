@@ -12,21 +12,24 @@ header {
     padding: 1em 0;
 }
 
+/* 背景画像セクション */
 #background-image-section {
-    background-image: url('Photo-1.png'); /* 背景画像のファイル名を設定 */
+    background-image: url('Photo-1.png'); /* ここに実際の画像パスを設定してください */
     background-size: cover;
     background-position: center;
-    height: 50vh; /* 背景画像セクションの高さ */
+    height: 50vh; /* 高さをビューポートの50%に設定 */
+    margin-bottom: 2em; /* 問い合わせフォームとの間隔 */
 }
 
+/* 問い合わせフォームセクション */
 #contact-form-section {
     background: white;
-    padding: 1em;
+    padding: 2em;
     margin: 2em auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 80%; /* フォームの幅 */
-    max-width: 640px; /* 最大幅 */
-    text-align: center; /* テキストとリンクを中央揃えに */
+    width: 80%;
+    max-width: 640px;
+    text-align: center;
 }
 
 /* 問い合わせフォームのリンクスタイル */
@@ -38,7 +41,6 @@ header {
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
-    text-align: center;
     margin-top: 1em;
 }
 
