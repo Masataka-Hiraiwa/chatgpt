@@ -3,9 +3,6 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('Photo-1.png'); 
-    background-size: cover;
-    background-position: center;
 }
 
 header {
@@ -15,15 +12,34 @@ header {
     padding: 1em 0;
 }
 
-main {
-    padding: 2em;
+#background-image-section {
+    background-image: url('Photo-1.png'); /* 背景画像のファイル名を設定 */
+    background-size: cover;
+    background-position: center;
+    height: 50vh; /* 背景画像セクションの高さ */
 }
 
-.contact-form {
+#contact-form-section {
     background: white;
     padding: 1em;
-    margin: 2em 0;
+    margin: 2em auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%; /* フォームの幅 */
+    max-width: 640px; /* 最大幅 */
+    text-align: center; /* テキストとリンクを中央揃えに */
+}
+
+/* 問い合わせフォームのリンクスタイル */
+.form-link {
+    display: inline-block;
+    background: #007bff;
+    color: white;
+    padding: 1em 2em;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1em;
 }
 
 footer {
@@ -31,7 +47,4 @@ footer {
     color: white;
     text-align: center;
     padding: 1em 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }
