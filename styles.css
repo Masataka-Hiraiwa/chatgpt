@@ -21,6 +21,17 @@ header {
     margin-bottom: 2em; /* 問い合わせフォームとの間隔 */
 }
 
+/* 新しい画像セクションのスタイル */
+#additional-image-section {
+    text-align: center; /* センター揃え */
+    padding: 2em 0; /* 上下の余白 */
+}
+
+#additional-image-section img {
+    max-width: 100%; /* 画像の最大幅を設定 */
+    height: auto; /* 画像の高さを自動で設定 */
+}
+
 /* 問い合わせフォームセクション */
 #contact-form-section {
     background: white;
