@@ -1,41 +1,36 @@
+/* 全体の設定 */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-image: url('your-background-image.jpg'); /* Photo-1 */
+    background-size: cover;
+    background-position: center;
 }
 
 header {
-    background-color: #333;
+    background: rgba(0, 0, 0, 0.5);
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 1em 0;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+main {
+    padding: 2em;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-section {
-    padding: 20px;
+.contact-form {
+    background: white;
+    padding: 1em;
+    margin: 2em 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 footer {
-    background-color: #333;
+    background: #333;
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 1em 0;
     position: fixed;
     bottom: 0;
     width: 100%;
