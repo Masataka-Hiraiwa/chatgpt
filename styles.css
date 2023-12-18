@@ -5,31 +5,25 @@ body {
     padding: 0;
 }
 
+/* ヘッダーのスタイル */
 header {
     background: rgba(0, 0, 0, 0.5);
     color: white;
     text-align: center;
-    padding: 1em 0;
+    padding: 2em 0; /* パディングを増やしてヘッダーの高さを大きくします */
+    margin: 0 auto; /* マージンを自動にして中央揃えします */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* テキストが浮かび上がるような影を追加 */
+    position: relative; /* 他のセクションと重ならないようにします */
+    z-index: 10; /* ヘッダーが他のコンテンツよりも前に表示されるようにします */
 }
 
 /* 背景画像セクション */
 #background-image-section {
-    background-image: url('Photo-1.png'); /* ここに実際の画像パスを設定してください */
+    background-image: url('Photo-1.png'); /* 背景画像のパス */
     background-size: cover;
     background-position: center;
-    height: 50vh; /* 高さをビューポートの50%に設定 */
-    margin-bottom: 2em; /* 問い合わせフォームとの間隔 */
-}
-
-/* 新しい画像セクションのスタイル */
-#additional-image-section {
-    text-align: center; /* センター揃え */
-    padding: 2em 0; /* 上下の余白 */
-}
-
-#additional-image-section img {
-    max-width: 100%; /* 画像の最大幅を設定 */
-    height: auto; /* 画像の高さを自動で設定 */
+    height: 50vh;
+    margin-top: 2em; /* ヘッダーとの間に余白を追加 */
 }
 
 /* 問い合わせフォームセクション */
@@ -46,7 +40,7 @@ header {
 /* 問い合わせフォームのリンクスタイル */
 .form-link {
     display: inline-block;
-    background:  #808080;
+    background: #808080;
     color: white;
     padding: 1em 2em;
     text-decoration: none;
@@ -55,9 +49,12 @@ header {
     margin-top: 1em;
 }
 
+/* フッターのスタイル */
 footer {
     background: #333;
     color: white;
     text-align: center;
     padding: 1em 0;
+    position: relative; /* 他のセクションと重ならないようにします */
+    z-index: 10; /* フッターが他のコンテンツよりも前に表示されるようにします */
 }
