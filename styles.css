@@ -35,7 +35,7 @@ header {
 /* 問い合わせフォームのリンクスタイル */
 .form-link {
     display: inline-block;
-    background: #007bff;
+    background:  #808080;
     color: white;
     padding: 1em 2em;
     text-decoration: none;
