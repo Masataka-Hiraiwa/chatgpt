@@ -7,6 +7,7 @@ body, html {
     height: 100%;
     box-sizing: border-box;
     overflow-x: hidden; /* 横スクロールを防ぐ */
+    background-color: #f0f0f0; /* 全体の背景色をグレーに変更 */
 }
 
 /* ヘッダーのスタイル */
@@ -14,7 +15,7 @@ header {
     background: rgba(0, 0, 0, 0.5);
     color: white;
     text-align: center;
-    padding: 1em 0; /* パディングを調整 */
+    padding: 4em 0; /* 上下のパディングを増やしてヘッダーの高さを拡大 */
     width: 100%; /* フル幅 */
     position: relative;
     z-index: 10;
@@ -48,7 +49,7 @@ header h1 {
     background-position: center; /* 中央揃え */
     height: 50vh; /* 高さの調整 */
     width: 100vw; /* ビューポート幅全体 */
-    margin-top: 2em; /* 上部の余白を追加 */
+    margin-top: -4em; /* ヘッダーの下部のパディングを打ち消す */
 }
 
 /* 新しい画像セクション */
