@@ -16,22 +16,42 @@ header {
     text-align: center;
     padding: 2em 0;
     width: 100%;
-    z-index: 10;
     position: relative;
+    z-index: 10;
 }
 
 /* ヘッダー内のテキストアニメーション */
-@keyframes floatText {
-    0% { transform: translateY(-10px); }
-    50% { transform: translateY(10px); }
-    100% { transform: translateY(-10px); }
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 header h1 {
     margin: 0;
     padding: 0;
-    animation: floatText 5s ease-in-out infinite; /* テキストに上下の動きをもたせるアニメーション */
+    /* テキストのフォントサイズやその他のスタイルはお好みで調整 */
 }
+
+.animated-text {
+    opacity: 0; /* 最初は透明に */
+    animation: fadeInRight 0.5s forwards; /* アニメーションを適用 */
+    display: inline-block; /* スパンをインラインブロック要素として表示 */
+    margin: 0 2px; /* 文字間の余白 */
+}
+
+/* アニメーションのディレイを各文字に適用 */
+.animated-text:nth-child(1) { animation-delay: 0.5s; }
+.animated-text:nth-child(2) { animation-delay: 0.6s; }
+.animated-text:nth-child(3) { animation-delay: 0.7s; }
+.animated-text:nth-child(4) { animation-delay: 0.8s; }
+.animated-text:nth-child(5) { animation-delay: 0.9s; }
+.animated-text:nth-child(6) { animation-delay: 1.0s; }
 
 /* 背景画像セクション */
 #background-image-section {
@@ -70,7 +90,7 @@ header h1 {
     border-radius: 5px;
     font-weight: bold;
     margin-top: 1em;
-    transition: background-color 0.3s ease; /* 背景色の変化にアニメーションを追加 */
+    transition: background-color 0.3s ease;
 }
 
 /* フッターのスタイル */
