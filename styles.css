@@ -22,24 +22,14 @@ header {
 }
 
 /* ヘッダー内のテキストアニメーション */
-@keyframes textAnimation {
-    0% { opacity: 0; transform: translateX(-50px); }
-    100% { opacity: 1; transform: translateX(0); }
-}
-
-header h1 {
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-    /* ヘッダーのテキストに適用するアニメーションの設定 */
-}
-
 header h1 span {
     opacity: 0; /* 初期状態では不透明度を0に */
     animation: textAnimation 0.6s ease forwards; /* アニメーションを適用 */
     display: inline-block; /* 各文字をインラインブロックとして扱う */
+    animation-delay: 0.5s; /* アニメーションの開始を遅らせる */
 }
 
+/* アニメーションのディレイを個別の文字に適用 */
 header h1 span:nth-child(1) { animation-delay: 0.5s; }
 header h1 span:nth-child(2) { animation-delay: 0.6s; }
 header h1 span:nth-child(3) { animation-delay: 0.7s; }
@@ -55,7 +45,7 @@ header h1 span:nth-child(6) { animation-delay: 1.0s; }
     background-position: center; /* 中央揃え */
     height: 50vh; /* 高さの調整 */
     width: 100vw; /* ビューポート幅全体 */
-    margin-top: -4em; /* ヘッダーの下部のパディングを打ち消す */
+    margin: 2em 0; /* 上下のマージンを設定 */
 }
 
 /* 動画セクションのスタイル */
@@ -63,18 +53,15 @@ header h1 span:nth-child(6) { animation-delay: 1.0s; }
     background-color: #f0f0f0; /* コンテナの背景色を全体背景色と同じグレーに設定 */
     text-align: center; /* 動画を中央揃えにする */
     padding: 2em 0; /* 上下にパディングを追加 */
-}
-
-#video-section iframe {
-    max-width: 100%; /* iframeの最大幅を100%に設定 */
-    height: auto; /* 高さは自動調整 */
-    border: none; /* iframeの枠線を削除 */
+    margin: 2em 0; /* 上下に同じマージンを設定 */
 }
 
 /* 新しい画像セクション */
 #additional-image-section img {
     max-width: 100%; /* 最大幅を100%に */
     height: auto; /* 高さは自動調整 */
+    display: block; /* ブロック要素として表示 */
+    margin: 2em auto; /* 上下に同じマージンを設定し、中央揃えに */
 }
 
 /* 問い合わせフォームセクション */
@@ -108,6 +95,12 @@ footer {
     text-align: center;
     padding: 1em 0;
     width: 100%;
-    z-index: 10;
     position: relative;
+    z-index: 10;
+}
+
+/* アニメーションのキーフレーム定義 */
+@keyframes textAnimation {
+    0% { opacity: 0; transform: translateX(-50px); }
+    100% { opacity: 1; transform: translateX(0); }
 }
