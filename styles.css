@@ -7,7 +7,7 @@ body, html {
     height: 100%;
     box-sizing: border-box;
     overflow-x: hidden; /* 横スクロールを防ぐ */
-    background-color: #808080; /* 全体の背景色をグレーに変更 */
+    background-color: #f0f0f0; /* 全体の背景色をグレーに変更 */
 }
 
 /* ヘッダーのスタイル */
@@ -22,24 +22,32 @@ header {
 }
 
 /* ヘッダー内のテキストアニメーション */
-@keyframes fadeInLeft {
-    from {
-        opacity: 0;
-        transform: translateX(-10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
+@keyframes textAnimation {
+    0% { opacity: 0; transform: translateX(-50px); }
+    100% { opacity: 1; transform: translateX(0); }
 }
 
 header h1 {
     margin: 0;
     padding: 0;
     display: inline-block;
-    animation: fadeInLeft 1s ease forwards; /* 左からのフェードイン効果 */
-    animation-delay: 0.5s; /* アニメーション遅延時間 */
+    /* ヘッダーのテキストに適用するアニメーションの設定 */
 }
+
+/* アニメーションを適用する個別の文字 */
+header h1 span {
+    opacity: 0; /* 初期状態では不透明度を0に */
+    animation: textAnimation 0.6s ease forwards; /* アニメーションを適用 */
+    display: inline-block; /* 各文字をインラインブロックとして扱う */
+}
+
+/* 個別の文字に適用するアニメーションのディレイ */
+header h1 span:nth-child(1) { animation-delay: 0.5s; }
+header h1 span:nth-child(2) { animation-delay: 0.6s; }
+header h1 span:nth-child(3) { animation-delay: 0.7s; }
+header h1 span:nth-child(4) { animation-delay: 0.8s; }
+header h1 span:nth-child(5) { animation-delay: 0.9s; }
+header h1 span:nth-child(6) { animation-delay: 1.0s; }
 
 /* 背景画像セクション */
 #background-image-section {
