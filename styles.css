@@ -34,14 +34,12 @@ header h1 {
     /* ヘッダーのテキストに適用するアニメーションの設定 */
 }
 
-/* アニメーションを適用する個別の文字 */
 header h1 span {
     opacity: 0; /* 初期状態では不透明度を0に */
     animation: textAnimation 0.6s ease forwards; /* アニメーションを適用 */
     display: inline-block; /* 各文字をインラインブロックとして扱う */
 }
 
-/* 個別の文字に適用するアニメーションのディレイ */
 header h1 span:nth-child(1) { animation-delay: 0.5s; }
 header h1 span:nth-child(2) { animation-delay: 0.6s; }
 header h1 span:nth-child(3) { animation-delay: 0.7s; }
@@ -60,6 +58,19 @@ header h1 span:nth-child(6) { animation-delay: 1.0s; }
     margin-top: -4em; /* ヘッダーの下部のパディングを打ち消す */
 }
 
+/* 動画セクションのスタイル */
+#video-section {
+    background-color: #f0f0f0; /* コンテナの背景色を全体背景色と同じグレーに設定 */
+    text-align: center; /* 動画を中央揃えにする */
+    padding: 2em 0; /* 上下にパディングを追加 */
+}
+
+#video-section iframe {
+    max-width: 100%; /* iframeの最大幅を100%に設定 */
+    height: auto; /* 高さは自動調整 */
+    border: none; /* iframeの枠線を削除 */
+}
+
 /* 新しい画像セクション */
 #additional-image-section img {
     max-width: 100%; /* 最大幅を100%に */
@@ -68,7 +79,7 @@ header h1 span:nth-child(6) { animation-delay: 1.0s; }
 
 /* 問い合わせフォームセクション */
 #contact-form-section {
-    background:#f0f0f0;
+    background: white;
     padding: 2em;
     margin: 2em auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
