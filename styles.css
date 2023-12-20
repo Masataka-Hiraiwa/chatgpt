@@ -78,6 +78,13 @@ header h1 span:nth-child(6) { animation-delay: 1.0s; }
     margin: 2em auto; /* 上下の外側の余白を追加して中央揃えに */
 }
 
+#text-section-one p {
+    font-size: 1.25em; /* フォントサイズを大きくする */
+    line-height: 1.6; /* 行間を適切に設定 */
+    max-width: 800px; /* 最大幅を設定し、適切な折り返しを行う */
+    margin: auto; /* 自動的に上下左右のマージンを設定して中央揃え */
+}
+
 /* 新しい写真Photo-4のセクションのスタイル */
 #photo-section-four {
     background-color: #f0f0f0; /* 背景色を全体の背景色と同じに設定 */
@@ -99,6 +106,12 @@ header h1 span:nth-child(6) { animation-delay: 1.0s; }
     margin: 2em auto; /* 上下の外側の余白を追加して中央揃えに */
 }
 
+#text-section-two p {
+    font-size: 1.25em; /* フォントサイズを大きくする */
+    line-height: 1.6; /* 行間を適切に設定 */
+    max-width: 800px; /* 最大幅を設定し、適切な折り返しを行う */
+    margin: auto; /* 自動的に上下左右のマージンを設定して中央揃え */
+}
 /* 新しい画像セクション */
 #additional-image-section img {
     max-width: 100%; /* 最大幅を100%に */
