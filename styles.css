@@ -79,6 +79,10 @@ header h1 span:nth-child(6) { animation-delay: 1.0s; }
     max-width: 800px; /* 最大幅を設定し、適切な折り返しを行う */
 }
 
+span {
+  color: yellow;
+}
+
 /* 各セクション内の段落のスタイル */
 #text-section-one p {
     margin: 0; /* 上下のマージンを削除 */
