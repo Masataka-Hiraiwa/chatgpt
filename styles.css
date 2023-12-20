@@ -100,20 +100,19 @@ header h1 span:nth-child(6) { animation-delay: 1.0s; }
 }
 
 /* 新しい文言②のセクションのスタイル */
-#text-section-one,
 #text-section-two {
     background-color: #f0f0f0; /* 背景色を全体の背景色と同じに設定 */
     text-align: left; /* テキストを左揃えにする */
     padding: 2em; /* 内側の余白を追加 */
     margin: 2em auto; /* 上下の外側の余白を追加して中央揃えに */
     max-width: 800px; /* 最大幅を設定し、適切な折り返しを行う */
-    font-size: 1em; /* フォントサイズを統一 */
-    line-height: 1.5; /* 行間を統一 */
 }
 
-#text-section-one p,
+/* 各セクション内の段落のスタイル */
 #text-section-two p {
-    margin: 0 auto; /* 自動的に上下左右のマージンを設定して中央揃え */
+    margin: 0; /* 上下のマージンを削除 */
+    font-size: 2em; /* フォントサイズを大きくする */
+    line-height: 1.2; /* 行間を調整 */
 }
 
 /* 新しい画像セクション */
