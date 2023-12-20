@@ -77,10 +77,9 @@ header h1 span:nth-child(6) { animation-delay: 1.0s; }
     padding: 2em; /* 内側の余白を追加 */
     margin: 2em auto; /* 上下の外側の余白を追加して中央揃えに */
     max-width: 800px; /* 最大幅を設定し、適切な折り返しを行う */
+    span {
+  color: #FFCC00;
 }
-
-span {
-  color: yellow;
 }
 
 /* 各セクション内の段落のスタイル */
