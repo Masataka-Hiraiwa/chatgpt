@@ -73,16 +73,19 @@ header h1 span:nth-child(6) { animation-delay: 1.0s; }
 /* 新しい文言①のセクションのスタイル */
 #text-section-one {
     background-color: #f0f0f0; /* 背景色を全体の背景色と同じに設定 */
-    text-align: center; /* テキストを中央揃えにする */
     padding: 2em; /* 内側の余白を追加 */
     margin: 2em auto; /* 上下の外側の余白を追加して中央揃えに */
+    text-align: left; /* テキストを左揃えにする */
+    max-width: 800px; /* 最大幅を設定し、適切な折り返しを行う */
+    font-size: larger; /* フォントサイズを大きくする */
 }
 
 #text-section-one p {
-    font-size: 1.25em; /* フォントサイズを大きくする */
-    line-height: 1.6; /* 行間を適切に設定 */
-    max-width: 800px; /* 最大幅を設定し、適切な折り返しを行う */
-    margin: auto; /* 自動的に上下左右のマージンを設定して中央揃え */
+    font-size: 1em; /* フォントサイズを指定 */
+    line-height: 1.5; /* 行間を設定 */
+    max-width: 800px; /* 最大幅を設定 */
+    margin: auto; /* センタリングのための自動マージン */
+    text-align: left; /* テキストを左揃えにする */
 }
 
 /* 新しい写真Photo-4のセクションのスタイル */
